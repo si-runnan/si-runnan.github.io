@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Runnan Si</title>
+  <meta name="description" content="Personal homepage of Runnan Si.">
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #1d2329;
+      --muted: #5e6873;
+      --line: #d9dee4;
+      --accent: #1463ff;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(880px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: 132px 1fr;
+      gap: 28px;
+      align-items: center;
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .avatar {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      object-fit: cover;
+      background: var(--panel);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 1.1;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .role {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 19px;
+    }
+
+    section {
+      margin-top: 34px;
+      padding: 28px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .link-button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 40px;
+      padding: 8px 13px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: var(--panel);
+      color: var(--text);
+    }
+
+    .link-button:hover {
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: min(100% - 28px, 880px);
+        padding: 34px 0;
+      }
+
+      .profile {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      section {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="profile">
+      <img class="avatar" src="https://github.com/si-runnan.png?size=264" alt="Runnan Si">
+      <div>
+        <h1>Runnan Si</h1>
+        <p class="role">Graduate Student / Researcher</p>
+        <div class="links">
+          <a class="link-button" href="mailto:Runnan.Si@uga.edu">Email</a>
+          <a class="link-button" href="https://github.com/si-runnan">GitHub</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I am interested in intelligent sensing systems, millimeter-wave radar,
+        human pose estimation, and dense human mesh recovery.
+      </p>
+    </section>
+
+    <section>
+      <h2>Research</h2>
+      <p>
+        My current work explores radar-based human perception, with a focus on
+        recovering accurate 3D body structure from privacy-preserving sensing
+        signals.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:Runnan.Si@uga.edu">Runnan.Si@uga.edu</a></p>
+    </section>
+
+    <footer>
+      <p>Last updated: 2026</p>
+    </footer>
+  </main>
+</body>
+</html>
